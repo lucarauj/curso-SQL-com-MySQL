@@ -1,4 +1,10 @@
-Introdução ao SQL com MySQL: ManipulAção e Consulta de Dados
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/lucarauj/curso-SQL-com-MySQL/blob/main/LICENSE)
+
+<h1 align="center"> Introdução ao SQL com MySQL: </h1>
+<h2 align="center"> Manipulação e Consulta de Dados </h2>
+
+<p align="center"><img width="150px" src="https://github.com/lucarauj/assets/blob/main/MySQL.png" /></p>
+ 
 
 ## Conceitos importantes:
 
@@ -128,49 +134,43 @@ INSERT INTO tb_produto (produto, nome, embalagem, tamanho, sabor, preco_lista) V
 ('1004327', 'Videira do Campo - 1,5 Litros - Melancia', 'PET', '1,5 Litros', 'Melancia', 19.51);
 ```
 
-## Mostrando os dados de uma tabela:
+## Pesquisando dados de uma tabela:
 
 ```
 SELECT * FROM tb_produto;
 ```
 
-## Alterando registros de uma tabela:
+## Alterando registros:
 
 ```
 UPDATE tb_produto SET embalagem = 'Lata', preco_lista = 2.46 WHERE produto = '544931';
 ```
 
-## Excluindo registro de uma tabela:
+## Excluindo registro:
 
 ```
 DELETE FROM tb_produto WHERE produto = '1078680';
 ```
 
-## Incluindo chave primária em uma tabela:
+## Incluindo chave primária:
 
 ```
 ALTER TABLE tb_produto ADD PRIMARY KEY(produto);
 ```
 
-## Incluindo campo em uma tabela:
+## Incluindo campo (coluna):
 
 ```
 ALTER TABLE tb_produto ADD COLUMN (DATA_NASCIMENTO DATE);
 ```
 
-## Incluindo campo (coluna) em uma tabela:
-
-```
-ALTER TABLE tb_produto ADD COLUMN (DATA_NASCIMENTO DATE);
-```
-
-## Excluindo campo (coluna) em uma tabela:
+## Excluindo campo (coluna):
 
 ```
 ALTER TABLE tb_produto DROP COLUMN DATA_NASCIMENTO;
 ```
 
-## Usando o comando SELECT para pesquisar dados em uma tabela:
+## Usando o comando SELECT para pesquisar dados:
 
 ```
 SELECT * FROM tb_cliente;
@@ -208,3 +208,9 @@ SELECT * FROM tb_cliente WHERE YEAR(DATA_NASCIMENTO) = 1995;
 ```
 SELECT * FROM tb_produto WHERE PRECO_LISTA >= 16.007 OR PRECO_LISTA <= 16.009 AND EMBALAGEM = 'PET';
 ```
+
+## Aluno
+
+#### Lucas Araujo
+
+<a href="https://www.linkedin.com/in/lucarauj"><img alt="lucarauj | LinkdeIN" width="40px" src="https://user-images.githubusercontent.com/43545812/144035037-0f415fc7-9f96-4517-a370-ccc6e78a714b.png" /></a>
