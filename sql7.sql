@@ -1,0 +1,7 @@
+SELECT * FROM tb_cliente;
+
+SELECT CPF, NOME FROM tb_cliente;
+
+SELECT CPF, NOME FROM tb_cliente LIMIT 5;
+
+SELECT CPF AS CPF_CLIENTE FROM tb_cliente LIMIT 5;

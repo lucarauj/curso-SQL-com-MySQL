@@ -1,0 +1,25 @@
+SELECT * FROM tb_cliente;
+
+SELECT * FROM tb_produto WHERE produto = '1004327';
+
+UPDATE tb_produto SET SABOR = 'Cítricos' WHERE SABOR = 'Limão'; 
+
+SELECT * FROM tb_produto WHERE SABOR = 'Cítricos';
+
+SELECT * FROM tb_cliente WHERE IDADE = 22;
+
+SELECT * FROM tb_cliente WHERE IDADE > 22;
+
+SELECT * FROM tb_cliente WHERE IDADE <> 22 ORDER BY IDADE;
+
+SELECT * FROM tb_cliente WHERE IDADE != 22 ORDER BY IDADE;
+
+SELECT * FROM tb_cliente WHERE IDADE > 'Fernando Cavalcante';
+
+SELECT * FROM tb_produto WHERE PRECO_LISTA BETWEEN 16.007 AND 16.009;
+
+SELECT * FROM tb_cliente WHERE YEAR(DATA_NASCIMENTO) = 1995;
+
+SELECT * FROM tb_cliente WHERE MONTH(DATA_NASCIMENTO) = 10;
+
+SELECT * FROM tb_produto WHERE PRECO_LISTA >= 16.007 OR PRECO_LISTA <= 16.009 AND EMBALAGEM = 'PET';
